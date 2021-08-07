@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sample Form </title>
+	<link rel="stylesheet" type="text/css" href="CSS/form.css">
+</head>
+<body>
+	<div class="generalstyle"> </div>
+	<p> Provide Your Information </p>
+	<form>
+	<fieldset class="fieldset"> <legend> Personal </legend>
+
+	<li>
+		<label for="field1"><span> Full Name <span class="required">*</span></span>
+		<input type="text" name="field1" class="field-divided" placeholder="FName" value="">
+		<input type="text" name="field1" class="field-divided" placeholder="LName" value=""></label> 
+	</li><br>
+
+	<li>
+		<label for="field2"> <span> Email <span class="required">*</span></span>  
+		<input type="email" name="field2" class="input-field" placeholder="Type in your email" value=""></label>
+	</li><br>
+	
+	<li>
+		<label><span> Phone <span class="required">*</span></span>
+    	<input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="4" /> - <input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4"  /> - <input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10" /></label>
+    </li><br>
+
+    <li>
+    	<label for="field3"> <span> Address </span>
+    	<input type="text" name="field3" placeholder="Your precise address" class="input-field"></label>
+    </li>
+    </fieldset>
+
+    <!-- new fieldset for another information cache -->
+
+    <fieldset class="fieldset"> <legend> Education </legend>
+    <li>
+		<label for="field4"><span> Primary School </span> 
+    	<input type="text" name="field4" class="input-field"></label>
+  	</li><br>
+    <li>
+    	<label for="field5"> <span> Secondary School </span>
+    	<input type="text" name="field5" class="input-field"></label>
+    </li><br>
+    <li>
+    	<label for="field6"><span> Tertiary Institution <span class="required">*</span></span>
+    	<input type="text" name="field6" class="input-field" placeholder="Type in the name of the college/university you attended"></label>
+	</li><br>
+    
+    </fieldset>
+
+
+    <!-- new fieldset for another information cache -->
+
+    <fieldset class="fieldset"> <legend> Skillset </legend>
+ 	<label><span> Describe Your Skillset </span><span class="required">*</span></label><br>
+ 	<textarea name="field5" id="field5"></textarea>
+	</fieldset><br>
+
+	<label id="submit">
+		<input type="submit" name="submit" value="Submit">
+	</label>
+</form>
+</body>
+</html>
